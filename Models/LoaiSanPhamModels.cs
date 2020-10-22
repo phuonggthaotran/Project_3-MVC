@@ -30,6 +30,7 @@ namespace DoAn3.Models
                 obj.id = int.Parse(dr[0].ToString());
                 obj.name = dr[1].ToString();
                 obj.image = dr[2].ToString();
+                
                 list.Add(obj);
             }
 

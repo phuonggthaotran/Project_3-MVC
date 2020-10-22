@@ -30,7 +30,6 @@ namespace DoAn3.Controllers
         [ChildActionOnly]
         public  ActionResult _Menu()
         {
-            List<LoaiSanPham> lsp = loaiSanPhamModel.getAll();
             return PartialView("~/Views/Share/_Menu.cshtml");
         }
         
