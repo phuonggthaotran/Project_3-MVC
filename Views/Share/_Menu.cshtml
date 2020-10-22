@@ -1,0 +1,20 @@
+﻿<nav class="menu-ngang" ng-controller="MenuController">
+    <ul>
+        <li><span style="color: white;"><i class="fas fa-home"></i></span><a href="trangchuda.html" title="Trang chủ">Trang chủ</a></li>
+        <li>
+            <span style="color: white;"><i class="fas fa-list"></i></span>
+            <a href="#" class="menu-chinh" id="menu-chinh">
+
+                Sản phẩm
+            </a>
+            <ul>
+                <li ng-repeat="loai in menus"><a href="#">{{loai.name}}</a></li>
+            </ul>
+        </li>
+        <li><span style="color: white;"><i class="far fa-edit"></i></span><a href="gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+        <li><span style="color: white;"><i class="fas fa-shopping-bag"></i></span><a href="giohang.html" title="Giỏ hàng">Giỏ hàng</a></li>
+
+        <li><span style="color: white;"><i class="fas fa-phone-square"></i></span><a href="lienhe.html" title="Liên hệ">Liên hệ</a></li>
+    </ul>
+</nav>
+

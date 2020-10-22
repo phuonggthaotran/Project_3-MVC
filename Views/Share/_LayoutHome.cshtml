@@ -1,0 +1,124 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <style type="css/text"></style>
+    <link rel="stylesheet" href="~/Assets/css/trangchuda.css">
+    <link rel="stylesheet" href="~/Assets/css/huongdan.css">
+    <!-- use icons font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    @RenderSection("styles", false)
+</head>
+<body ng-app="AppModule">
+
+    <div class="body">
+        <!-- header -->
+        <header>
+            <div id="trai">
+                <a href="trangchuda.html">
+                    <img class="logo" src="~/Assets/image/logo đồ án.png" alt="Logo" title="Điện máy Tú Lan|tivi của mọi nhà">
+
+                </a>
+            </div>
+            <div id="trai1" style="margin-top: 15px;">
+                <a href="lienhe.html">
+
+                    <img class="sdtlogo" src="~/Assets/image/sđt liên hệ.PNG" style="padding-bottom: 3px;">
+                </a>
+            </div>
+            <div id="giua" style="display: flex;">
+                <div class="giua-trai">
+                    <input id="tukhoa" type="search" placeholder="Bạn tìm gì hôm nay?" name="tukhoa" value="" style="border-radius: 4px;">
+                </div>
+                <div class="giua-phai">
+                    <a href="#" style="color: white; "><p>Tìm kiếm</p> </a>
+                </div>
+            </div>
+            <div class="dki">
+                <a href="dangnhap.html" class="dangnhap">Đăng nhập</a><span style="padding-left: 5px;padding-right: 5px;">|</span><a href="dangki.html" class="dangki">Đăng kí</a>
+                <!-- <div><i class="fas fa-cart-plus"></i></div> -->
+            </div>
+        </header>
+        <!-- menu chính -->
+        @{
+            Html.Action("_Menu", "Home");
+        }
+        <!-- banner -->
+        @RenderBody()
+
+
+    </div>
+    <footer class="chantrang">
+
+        <div style="width:100%;height: 30px;background-color: rgb(250, 53, 27);"></div>
+
+        <div class="information">
+            <h2><b>THÔNG TIN</b></h2>
+            <br>
+            <P>
+                Trụ sở chính: 30 Nhân Hòa-Mỹ Hào-Hưng Yên
+                <br>Hotline: 0868.777.777 / 0911.510.000 / 0911.639.199
+                <br>Kinh doanh dự án: ‎0916969666 (Mr. Toàn)
+                <br>Điều vận: ‎0911.027.999 (Mr. Dũng)
+                <br>Khiếu nại & hỗ trợ: ‎0911.269.993 (24/24)
+                <br>Email liên hệ: tranphuongthao2k@gmail.com
+            </P>
+
+        </div>
+        <div class="information">
+
+
+            <ul>
+                <h2><b>HỖ TRỢ KHÁCH HÀNG</b></h2>
+
+                <li><i class="fas fa-caret-right"></i><a href="lienhe.html">Liên hệ-góp ý</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="huongdan.html">Hướng dẫn mua hàng</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="huongdan.html">Hướng dẫn trả góp</a></li>
+            </ul>
+
+        </div>
+        <div class="information">
+
+
+            <ul>
+                <h2><b>CHÍNH SÁCH MUA HÀNG</b></h2>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách thanh toán</a> </li>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách vận chuyển</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách bảo mật thông tin</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách xử lý khiếu nại</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách bảo hành</a> </li>
+                <li><i class="fas fa-caret-right"></i><a href="csthanhtoan.html">Chính sách đổi trả hàng</a> </li>
+
+            </ul>
+
+        </div>
+        <div class="information" style="margin-left: 15px;">
+            <h3>Theo dõi chúng tôi tại</h3>
+            <a href="https://www.facebook.com/profile.php?id=100011339886410" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/ken.hihi1" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:lythanhtoan2000@gmail.com" class="social-icon" target="_blank"><i class="fab fa-google"></i></a>
+            <a href="https://www.youtube.com/feed/my_videos" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ken.hihi/?hl=vi" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+        <div class="textwidget">
+            <p>
+                <span style="font-size: 14px;padding-top: 5px;">
+                    &copy;Trần Phương Thảo
+                </span>
+            </p>
+        </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>
+<!-- javascript -->
+
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/app.js"></script>

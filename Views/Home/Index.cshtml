@@ -1,0 +1,247 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Share/_LayoutHome.cshtml";
+}
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <a href="~/Assets/sony.html" title="Tivi Sony">
+            <img src="image/banner2.png" style="width: 1000px;height: 380px;">
+        </a>
+    </div>
+
+    <div class="mySlides fade">
+        <a href="~/Assets/samsung.html" title="Tivi Samsung"> <img src="~/Assets/image/banner1.jpg" style="width: 1000px;height: 380px;"></a>
+
+
+    </div>
+
+    <div class="mySlides fade">
+        <a href="~/Assets/LG.html" title="Tivi LG"> <img src="~/Assets/image/banner3.jpg" style="width: 1000px;height: 380px;"></a>
+
+
+    </div>
+    <div class="mySlides fade">
+        <a href="~/Assets/trangchuda.html"><img src="~/Assets/image/banner4.jpg" style="width: 1000px;height: 380px;"></a>
+
+
+    </div>
+
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+
+<script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+</script>
+
+
+<div class="clear"></div>
+<!-- chọn mặt hàng -->
+<section class="danhmuc">
+    <div class="card" style="position: static;width: 295px;height: 911px; float: left;">
+        <div class="p1-card" style="position: fixed;width: 295px;top: -180px;"></div>
+        <ul class="filter" style="float: left; padding: 9px;">
+            <li style="width: 100% !important">
+                <strong><b>CHỌN MỨC GIÁ</b></strong>
+                <ul style="word-wrap:break-word;padding-left: 0px;padding-top: 10px;">
+                    <li>
+                        <a href="duoi10tr.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Dưới 10 triệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="10tr-20tr.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Từ 10-20 triệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="20tr-50tr.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Từ 20-50 triệu</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tren50.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Trên 50 triệu</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li style="width: 100% !important">
+                <strong>Loại TIVI</strong>
+                <ul style="word-wrap:break-word;padding-left: 0px;padding-top: 10px;">
+
+                    <li style="float:left">
+                        <a href="HD4K.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Tivi Ultra HD4K</span>
+                        </a>
+                    </li>
+                    <li style="float:left">
+                        <a href="Qled.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Tivi Qled</span>
+                        </a>
+                    </li>
+                    <li style="float:left">
+                        <a href="8K.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Tivi 8K</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li style="width: 100% !important">
+                <strong>ĐỘ PHÂN GIẢI</strong>
+                <ul style="word-wrap:break-word;padding-left: 0px;padding-top: 10px;">
+                    <li>
+                        <a href="fullHD.html">
+                            <i class="fal fa-square-full"></i>
+                            <span> Full HD </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="8K.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>8K</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li style="width: 100% !important">
+                <strong>MÀN HÌNH</strong>
+                <ul style="word-wrap:break-word;padding-left: 0px;padding-top: 10px;">
+
+                    <li>
+                        <a href="32-50inch.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Từ 32-50 inch</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tren50inch.html">
+                            <i class="fal fa-square-full"></i>
+                            <span>Trên 50 inch</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+
+</section>
+<!-- sản phẩm -->
+<section class="content">
+    <h2 style="padding-bottom: 10px;">SẢN PHẨM MỚI</h2>
+
+    <article>
+        <div id="main">
+            <div class="div200">
+                <a href="1.html"><img src="~/Assets/image/sony.jpg" alt="" title="Tivi Oled Sony KD-55A8G 55 Inch 4K HDR Android"></a>
+                <a href="1.html"><p>Tivi Oled Sony KD-55A8G 55 Inch 4K HDR Android</p></a>
+                <br><br> <p style="color: red;"><b>39.990.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;">
+                    58.400.000 VNĐ
+                </p>
+            </div>
+            <div class="div200">
+                <a href="2.html"><img src="~/Assets/image/1.jpg" alt="" title="Tivi Led Samsung UA55RU7200KXXV 55 Inch 4K-Ultra HD"></a>
+                <a href="2.html"><p>Tivi Led Samsung UA55RU7200KXXV 55 Inch 4K-Ultra HD</p></a>
+                <br> <p style="color: red;"><b>11.990.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>21.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="3.html"><img src="~/Assets/image/2.jpg" alt="" title="Tivi Led Samsung UA55RU7400KXXV 55 Inch 4K-Ultra HD"></a>
+                <a href="3.html"><p>Tivi Led Samsung UA55RU7400KXXV 55 Inch 4K-Ultra HD</p></a>
+                <br> <p style="color: red;"><b>12.990.000 VNĐ</b></p>
+            </div>
+            <div class="div200">
+                <a href="4.html"><img src="~/Assets/image/3.jpg" alt="" title="Tivi Led Samsung UA55RU8000KXXV 55 Inch 4K-S Ultra HD"></a>
+                <a href="4.html"><p>Tivi Led Samsung UA55RU8000KXXV 55 Inch 4K-S Ultra HD</p></a>
+                <br><p style="color: red;"><b>15.990.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>29.000.000 VND</s></p>
+            </div>
+            <div class="div200">
+                <a href="5.html"><img src="~/Assets/image/2.jpg" alt="" title="Tivi Qled Samsung QA55Q65RAKXXV 55 Inch 4K"></a>
+                <a href="5.html"><p>Tivi Qled Samsung QA55Q65RAKXXV 55 Inch 4K</p></a>
+                <br><p style="color: red;"><b>16.990.000 VNĐ</b></p>
+            </div>
+            <div class="div200">
+                <a href="6.html"><img src="~/Assets/image/1.jpg" alt="" title="Tivi Led Samsung UA50RU7200KXXV 50 Inch 4K-Ultra HD"></a>
+                <a href="6.html"><p>Tivi Led Samsung UA50RU7200KXXV 50 Inch 4K-Ultra HD</p></a>
+                <br><p style="color: red;"><b>7.490.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>13.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="7.html"><img src="~/Assets/image/ss.jpg" alt="" title="Tivi Led Samsung UA50RU7400KXXV 50 Inch 4K-Ultra HD"></a>
+                <a href="7.html"><p>Tivi Led Samsung UA50RU7400KXXV 50 Inch 4K-Ultra HD</p></a>
+                <br> <p style="color: red;"><b>31.490.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>39.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="8.html"><img src="~/Assets/image/1.jpg" alt="" title="Tivi Led Samsung UA49RU8000KXXV 49 Inch 4K-S Ultra HD"></a>
+                <a href="8.html"><p>Tivi Led Samsung UA49RU8000KXXV 49 Inch 4K-S Ultra HD</p></a>
+                <br><p style="color: red;"><b>9.990.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>17.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="9.html"><img src="~/Assets/image/4.jpg" alt="" title="Tivi Qled Samsung QA49Q65RAKXXV 49 Inch 4K"></a>
+                <a href="9.html"><p>Tivi Qled Samsung QA49Q65RAKXXV 49 Inch 4K</p></a>
+                <br><p style="color: red;"><b>34.990.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>36.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="10.html"><img src="~/Assets/image/3.jpg" alt="" title="Tivi Led Samsung UA43RU7200KXXV 43 Inch 4K-Ultra HD"></a>
+                <a href="10.html"><p>Tivi Led Samsung UA43RU7200KXXV 43 Inch 4K-Ultra HD</p></a>
+                <br> <p style="color: red;"><b>8.490.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>14.000.000 VNĐ</s></p>
+            </div>
+            <div class="div200">
+                <a href="11.html"><img src="~/Assets/image/5.jpg" alt="" title="Tivi Led Samsung UA43RU7400KXXV 43 Inch 4K-Ultra HD"></a>
+                <a href="11.html"><p>Tivi Led Samsung UA43RU7400KXXV 43 Inch 4K-Ultra HD</p></a>
+                <br> <p style="color: red;"><b>30.490.000 VNĐ</b></p>
+                <p style="font-size: 12px; text-decoration: line-through;"><s>40.000.000 VNĐ</s></p>
+            </div>
+
+        </div>
+    </article>
+</section>
+<div class="clear">
